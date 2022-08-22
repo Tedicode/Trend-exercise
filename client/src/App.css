@@ -37,3 +37,22 @@ body {
 .stats-bar {
   display: flex;
 }
+
+.client-list {
+  width: 100%;
+  padding: 20px;
+}
+
+.single-client-row {
+  display: flex;
+  /* margin-left: 15px; */
+  /* align-items: left; */
+  border: solid 0.2px rgb(240, 239, 239);
+}
+
+td {
+  padding: 10px 100px 10px 2px;
+  text-align: left;
+  width: 25%;
+  /* border: solid 2px blue; */
+}
