@@ -2,27 +2,9 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import Sidebar from "./components/Sidebar";
+import ClientPage from "./components/pages/ClientPage";
 
-let dummyData = [
-  {
-    name: "Jill McCasky",
-    lastTransaction: "February 1, 2022",
-    netPromoterScore: 9,
-    contact: "(610)-345-3456",
-  },
-  {
-    name: "Margaret Jones",
-    lastTransaction: "April 8, 2022",
-    netPromoterScore: 4,
-    contact: "(610)-225-9986",
-  },
-  {
-    name: "John Smith",
-    lastTransaction: "February 1, 2022",
-    netPromoterScore: 2,
-    contact: "(610)-312-3779",
-  },
-];
+
 
 function App() {
   const [data, setData] = useState(null);
@@ -53,6 +35,7 @@ function App() {
         >
           Learn React
         </a>
+        <ClientPage />
       </div>
     </div>
   );
