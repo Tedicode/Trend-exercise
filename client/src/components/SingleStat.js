@@ -3,7 +3,7 @@ import "../App.css";
 const SingleStat = ({ stat }) => {
   return (
     <div className="single-stat" key={stat.statName}>
-      <p>{stat.statName}</p>
+      <h4>{stat.statName}</h4>
       <p>{stat.value}</p>
     </div>
   );
