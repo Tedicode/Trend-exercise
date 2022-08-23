@@ -43,7 +43,7 @@ const ClientPage = () => {
       <div className="stats-bar">
         {dummyStats.map((stat) => {
           return (
-            <div>
+            <div key={stat.statName}>
               {" "}
               <h4>{stat.statName}</h4>
               <h3>{stat.value}</h3>

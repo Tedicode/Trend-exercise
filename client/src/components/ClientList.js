@@ -4,17 +4,19 @@ import SingleClient from "./SingleClient";
 const ClientList = ({ clientList }) => {
   return (
     <table className="client-list">
-      <th className="single-client-row">
-        <td>
-          <input type="checkbox"></input> Name
-        </td>
-        <td>Last Transaction</td>
-        <td>Net Promoter Score</td>
-        <td>Contact</td>
-      </th>
-      {clientList.map((client) => {
-        return <SingleClient client={client} />;
-      })}
+      <tbody>
+        <tr className="single-client-row">
+          <th>
+            <input type="checkbox"></input> Name
+          </th>
+          <th>Last Transaction</th>
+          <th>Net Promoter Score</th>
+          <th>Contact</th>
+        </tr>
+        {clientList.map((client) => {
+          return <SingleClient key={client.name} client={client} />;
+        })}
+      </tbody>
     </table>
   );
 };
