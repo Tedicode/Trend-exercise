@@ -1,6 +1,7 @@
 import "../../App.css";
 import ClientList from "../ClientList";
 import StatsBar from "../StatsBar";
+import NewClientForm from "../NewClientForm";
 
 let dummyStats = [
   {
@@ -39,6 +40,14 @@ let dummyClientList = [
 ];
 
 const ClientPage = () => {
+  // when component mounts, fetch data (array of clients)
+  // put clientsArray  on local state here
+  // also filter criteria on local state here
+  // define handler for filter button - hide/show filter form
+  // create filter form component (to hide/show) comprising:
+  // 1. a select (dropdown)- to capture criterion and
+  // 2. an input field - to capture "Value"
+
   return (
     <div className="client-page">
       <StatsBar stats={dummyStats} />
@@ -54,6 +63,7 @@ const ClientPage = () => {
         </div>
         <ClientList clientList={dummyClientList} />
       </div>
+      <NewClientForm />
     </div>
   );
 };

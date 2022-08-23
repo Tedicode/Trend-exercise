@@ -88,6 +88,22 @@ th {
   /* border: solid 2px blue; */
 }
 
+.new-client-div {
+  border: solid 0.2px rgb(240, 239, 239);
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-client-form {
+  display: flex;
+  justify-content: center;
+}
+
+.new-client-form input {
+  margin: 15px;
+}
+
 .stats-bar {
   display: flex;
   justify-content: center;
