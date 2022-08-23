@@ -56,4 +56,8 @@ Now visit [http://localhost:3001](http://localhost:3001)
 
 From project root directory, push to heroku
 
-### `git push Heroku main`
+### `git push heroku main`
+
+And see the deployed site at:
+
+### [https://trend-exercise.herokuapp.com/](https://trend-exercise.herokuapp.com/)
