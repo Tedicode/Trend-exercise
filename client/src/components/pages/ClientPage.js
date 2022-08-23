@@ -1,5 +1,6 @@
 import "../../App.css";
 import ClientList from "../ClientList";
+import StatsBar from "../StatsBar";
 
 let dummyStats = [
   {
@@ -40,18 +41,17 @@ let dummyClientList = [
 const ClientPage = () => {
   return (
     <div className="client-page">
-      <div className="stats-bar">
-        {dummyStats.map((stat) => {
-          return (
-            <div key={stat.statName}>
-              {" "}
-              <h4>{stat.statName}</h4>
-              <h3>{stat.value}</h3>
-            </div>
-          );
-        })}
-      </div>
+      <StatsBar stats={dummyStats} />
+
       <div className="all-clients">
+        <div className="all-clients-options-header">
+          <h2 className="all-clients-title">All Clients</h2>
+          <div className="filter-options">
+            Filter Options - toggle visibility
+          </div>
+          <button>Filter</button>
+          <div>search bar</div>
+        </div>
         <ClientList clientList={dummyClientList} />
       </div>
     </div>
