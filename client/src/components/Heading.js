@@ -1,9 +1,9 @@
 import "../App.css";
 
-const Heading = () => {
+const Heading = ({ title }) => {
   return (
     <div className="nice-heading">
-      <h2>Heading of page</h2>
+      <h2>{title}</h2>
     </div>
   );
 };

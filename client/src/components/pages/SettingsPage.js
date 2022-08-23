@@ -1,12 +1,12 @@
 import "../../App.css";
 import Heading from "../Heading";
 
-const SalesPage = () => {
+const SettingsPage = () => {
   return (
     <div className="sales-page">
-      <Heading title={"Sales"} />
+      <Heading title={"Settings"} />
     </div>
   );
 };
 
-export default SalesPage;
+export default SettingsPage;
